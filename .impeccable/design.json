@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-09T10:48:00.000Z",
+  "title": "Design System: Techno Shop",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Electric Violet",
+        "canonical": "oklch(42% 0.24 305)",
+        "tonalRamp": [
+          "oklch(18% 0.08 305)",
+          "oklch(28% 0.16 305)",
+          "oklch(35% 0.20 305)",
+          "oklch(42% 0.24 305)",
+          "oklch(52% 0.22 305)",
+          "oklch(65% 0.18 305)",
+          "oklch(78% 0.12 305)",
+          "oklch(92% 0.04 305)"
+        ]
+      },
+      "primary-deep": {
+        "role": "primary",
+        "displayName": "Deep Grape",
+        "canonical": "oklch(35% 0.20 305)",
+        "tonalRamp": [
+          "oklch(15% 0.06 305)",
+          "oklch(22% 0.12 305)",
+          "oklch(28% 0.16 305)",
+          "oklch(35% 0.20 305)",
+          "oklch(45% 0.18 305)",
+          "oklch(58% 0.14 305)",
+          "oklch(72% 0.08 305)",
+          "oklch(90% 0.03 305)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Counter White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(20% 0.01 305)",
+          "oklch(35% 0.01 305)",
+          "oklch(50% 0.01 305)",
+          "oklch(65% 0.005 305)",
+          "oklch(78% 0.003 305)",
+          "oklch(88% 0.002 305)",
+          "oklch(95% 0.001 305)",
+          "oklch(100% 0 0)"
+        ]
+      },
+      "footer-ink": {
+        "role": "neutral",
+        "displayName": "Footer Night",
+        "canonical": "oklch(18% 0.10 305)",
+        "tonalRamp": [
+          "oklch(10% 0.06 305)",
+          "oklch(14% 0.08 305)",
+          "oklch(18% 0.10 305)",
+          "oklch(24% 0.10 305)",
+          "oklch(32% 0.09 305)",
+          "oklch(45% 0.07 305)",
+          "oklch(62% 0.05 305)",
+          "oklch(82% 0.02 305)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Promo heroes and high-energy section anchors only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Footer columns, cart headers, major section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Product names, navbar brand, card headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Descriptions, cart lines, support copy. Max 65–75ch in prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Discount chips, timer units, metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-rest",
+        "value": "0 1px 2px rgba(0, 0, 0, 0.05)",
+        "purpose": "Default elevation for product tiles and summary panels."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 10px 15px rgba(0, 0, 0, 0.08)",
+        "purpose": "Hover elevation on interactive product cards."
+      },
+      {
+        "name": "cta-glow",
+        "value": "0 10px 15px rgba(168, 85, 247, 0.25)",
+        "purpose": "Primary checkout and cart CTA emphasis."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default easing for hover, shadow, and color transitions."
+      },
+      {
+        "name": "duration-fast",
+        "value": "200ms",
+        "purpose": "Button and card hover feedback."
+      },
+      {
+        "name": "duration-medium",
+        "value": "300ms",
+        "purpose": "Image scale and shadow transitions on product cards."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main retail CTA for checkout, subscribe, and high-intent actions.",
+      "html": "<button class=\"ds-btn-primary\">Subscribe</button>",
+      "css": ".ds-btn-primary { background: #6A0DAD; color: #ffffff; padding: 12px 32px; border: none; border-radius: 12px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; transition: background 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1), transform 200ms cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 10px 15px rgba(168, 85, 247, 0.25); } .ds-btn-primary:hover { background: #3b1677; box-shadow: 0 12px 20px rgba(168, 85, 247, 0.3); } .ds-btn-primary:focus-visible { outline: 2px solid rgba(76, 29, 149, 0.5); outline-offset: 2px; } .ds-btn-primary:active { transform: scale(0.98); }"
+    },
+    {
+      "name": "Primary Button Hover",
+      "kind": "button",
+      "refersTo": "button-primary-hover",
+      "description": "Pressed/hover state reference for primary actions.",
+      "html": "<button class=\"ds-btn-primary-hover\">Checkout</button>",
+      "css": ".ds-btn-primary-hover { background: #3b1677; color: #ffffff; padding: 12px 32px; border: none; border-radius: 12px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; box-shadow: 0 12px 20px rgba(168, 85, 247, 0.3); }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Navbar search field with purple focus ring.",
+      "html": "<input class=\"ds-input-search\" type=\"text\" placeholder=\"search\" />",
+      "css": ".ds-input-search { width: 100%; height: 48px; padding: 0 16px 0 48px; border: 1px solid #d1d5db; border-radius: 12px; background: #ffffff; color: #374151; font-family: Arial, Helvetica, sans-serif; font-size: 14px; outline: none; transition: border-color 200ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-input-search::placeholder { color: #9ca3af; } .ds-input-search:focus { border-color: #a855f7; box-shadow: 0 0 0 2px rgba(243, 232, 255, 1); } .ds-input-search:focus-visible { outline: none; }"
+    },
+    {
+      "name": "Product Card",
+      "kind": "card",
+      "refersTo": "card-product",
+      "description": "Standard white product tile with hover lift.",
+      "html": "<article class=\"ds-card-product\"><div class=\"ds-card-product__media\"></div><h3 class=\"ds-card-product__title\">Samsung Monitor 19 inch</h3><p class=\"ds-card-product__price\">8,200 جنيه</p></article>",
+      "css": ".ds-card-product { background: #ffffff; border: 1px solid #f3f4f6; border-radius: 16px; padding: 16px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1); font-family: Arial, Helvetica, sans-serif; } .ds-card-product:hover { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08); } .ds-card-product__media { height: 120px; margin-bottom: 12px; background: #f9fafb; border-radius: 8px; } .ds-card-product__title { margin: 0 0 8px; font-size: 14px; font-weight: 500; line-height: 1.5; color: #1f2937; } .ds-card-product__price { display: inline-block; margin: 0; padding: 8px 12px; background: #4c1d95; color: #ffffff; border-radius: 8px; font-size: 14px; font-weight: 700; }"
+    },
+    {
+      "name": "Discount Chip",
+      "kind": "chip",
+      "refersTo": "button-secondary",
+      "description": "Red pill badge for percentage-off deals.",
+      "html": "<span class=\"ds-chip-discount\">10%</span>",
+      "css": ".ds-chip-discount { display: inline-block; padding: 4px 8px; border-radius: 9999px; background: #ef4444; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 700; line-height: 1; }"
+    },
+    {
+      "name": "Navbar Link",
+      "kind": "nav",
+      "refersTo": "button-secondary",
+      "description": "Secondary navigation link with purple hover.",
+      "html": "<a href=\"#\" class=\"ds-nav-link\">Discounts</a>",
+      "css": ".ds-nav-link { color: #1f2937; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 400; text-decoration: none; transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav-link:hover { color: #7e22ce; } .ds-nav-link:focus-visible { outline: 2px solid rgba(126, 34, 206, 0.4); outline-offset: 2px; border-radius: 4px; }"
+    },
+    {
+      "name": "Flash Deals Shell",
+      "kind": "custom",
+      "refersTo": "card-product",
+      "description": "Signature purple promo container wrapping white product cards.",
+      "html": "<section class=\"ds-flash-shell\"><h2 class=\"ds-flash-shell__title\">Amazing Deals</h2><div class=\"ds-flash-shell__grid\"><div class=\"ds-flash-shell__card\">Product</div></div></section>",
+      "css": ".ds-flash-shell { background: #6A0DAD; border-radius: 16px; padding: 16px; color: #ffffff; font-family: Arial, Helvetica, sans-serif; } .ds-flash-shell__title { margin: 0 0 16px; font-size: clamp(1.5rem, 4vw, 3rem); font-weight: 800; line-height: 1.2; } .ds-flash-shell__grid { display: grid; gap: 8px; } .ds-flash-shell__card { background: #ffffff; color: #1f2937; border-radius: 16px; padding: 12px; min-height: 180px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Voltage Counter",
+    "overview": "Techno Shop reads like a fast, high-energy electronics counter: bold purple blocks, white product tiles, and deal cues that push momentum. The interface is built for scanning, comparing, and acting quickly — not for slow editorial browsing. Surfaces stay clean and retail-practical; color carries urgency and brand recognition.\n\nDensity is comfortable but efficient. Navigation, search, and product grids prioritize legibility at speed. Motion and elevation reinforce affordance (hover lift, button feedback) without decorative excess.",
+    "keyCharacteristics": [
+      "Electric violet as the dominant brand signal across heroes, CTAs, and promo bands",
+      "White product surfaces with soft lifted shadows on interaction",
+      "Tactile retail confidence: rounded buttons, bold price badges, clear hierarchy",
+      "Deal-forward accents (red discount chips, countdown panels) without visual chaos",
+      "RTL-aware layout patterns mixed with LTR utility zones (search, icons)"
+    ],
+    "rules": [
+      {
+        "name": "The One Voltage Rule",
+        "body": "Electric violet (#6A0DAD / #4c1d95) carries brand identity. Use it on CTAs, promo surfaces, and price anchors — not as a wash over every neutral block.",
+        "section": "colors"
+      },
+      {
+        "name": "The Deal Signal Rule",
+        "body": "Red and green status colors are functional only: discounts, savings, success feedback. Never use them as decorative gradients or ambient page tinting.",
+        "section": "colors"
+      },
+      {
+        "name": "The Scan-First Rule",
+        "body": "Price and product title outrank decorative copy. If hierarchy competes, pricing and CTA labels win.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Contrast Rule",
+        "body": "Pair extrabold display with regular/medium body. Avoid stacking multiple bold lines without a clear primary line.",
+        "section": "typography"
+      },
+      {
+        "name": "The Lift-on-Intent Rule",
+        "body": "Shadows intensify on hover/focus for clickable cards and buttons. Static informational blocks stay at rest elevation.",
+        "section": "elevation"
+      },
+      {
+        "name": "The No-Glass Rule",
+        "body": "Backdrop blur and glassmorphism are prohibited. Depth comes from surface color, border, and shadow — not frosted overlays.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use electric violet (#6A0DAD / #4c1d95) for primary CTAs, promo bands, and price anchors.",
+      "Do keep product tiles white with clear borders and hover lift for scan-friendly browsing.",
+      "Do use red discount chips and green success states only for functional retail meaning.",
+      "Do maintain bold weight contrast between prices/headlines and supporting metadata.",
+      "Do honor RTL layout for Persian product copy while keeping utility controls predictable."
+    ],
+    "donts": [
+      "Don't fall into generic SaaS template look (predictable hero + card grid + muted palette patterns).",
+      "Don't ship safe, overused landing-page scaffolds that feel interchangeable with AI-generated demos.",
+      "Don't use border-left greater than 1px as a colored stripe on cards or list items.",
+      "Don't apply gradient text, glassmorphism, or decorative blur cards as default styling.",
+      "Don't scatter purple across every surface — preserve rarity and impact on action zones.",
+      "Don't rely on gray-muted body text on tinted near-white backgrounds without verifying 4.5:1 contrast."
+    ]
+  }
+}
