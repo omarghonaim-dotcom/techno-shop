@@ -10,9 +10,7 @@ export default withAuth({
 // Only protect these routes
 export const config = {
   matcher: [
-    "/dashboard/:path*",
     "/checkout/:path*",
-    "/wishlist/:path*",
     "/login",
     "/register",
   ],
